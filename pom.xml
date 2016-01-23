@@ -187,6 +187,11 @@
                 <version>${wiremock-version}</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <modules>
@@ -202,5 +207,6 @@
         <jmockit-version>1.19</jmockit-version>
         <wiremock-version>1.57</wiremock-version>
         <surefire-version>2.18.1</surefire-version>
+        <httpclient.version>4.5.1</httpclient.version>
     </properties>
 </project>
