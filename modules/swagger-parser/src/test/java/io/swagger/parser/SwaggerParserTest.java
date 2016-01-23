@@ -52,6 +52,13 @@ public class SwaggerParserTest {
     }
 
     @Test
+    public void testSSLRead() {
+        SwaggerParser parser = new SwaggerParser();
+        final Swagger swagger = parser.read("https://api.rocrooster.net/api-docs.json");
+        assertNotNull( swagger );
+    }
+
+    @Test
     public void testIssue75() {
         SwaggerParser parser = new SwaggerParser();
         final Swagger swagger = parser.read("src/test/resources/issue99.json");
