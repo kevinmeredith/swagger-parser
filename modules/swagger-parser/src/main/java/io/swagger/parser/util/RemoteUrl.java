@@ -92,7 +92,6 @@ public class RemoteUrl {
                 return EntityUtils.toString(entity, "UTF-8");
             } finally {
                 response.close();
-                httpClient.close();
             }
         } else {
             throw new IOException("CloseableHttpClient could not be initialized");
